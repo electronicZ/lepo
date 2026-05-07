@@ -1,0 +1,74 @@
+{
+  "8": {
+    "inputs": {
+      "image": "__IMAGE_1__"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "加载图像"
+    }
+  },
+  "42": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": ["56", 0]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保存图像"
+    }
+  },
+  "44": {
+    "inputs": {
+      "image": "__IMAGE_2__"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "加载图像"
+    }
+  },
+  "45": {
+    "inputs": {
+      "image": "__IMAGE_3__"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "加载图像"
+    }
+  },
+  "53": {
+    "inputs": {
+      "anything": ["56", 2]
+    },
+    "class_type": "ShowAnything|Mie",
+    "_meta": {
+      "title": "Show Anything 🐑"
+    }
+  },
+  "56": {
+    "inputs": {
+      "prompt": "__PROMPT__",
+      "aspectRatio": "1:1",
+      "skip_error": false,
+      "seed": 0,
+      "resolution": "2k",
+      "image1": ["8", 0],
+      "image2": ["44", 0],
+      "image3": ["45", 0],
+      "image4": ["64", 0]
+    },
+    "class_type": "RH_RhartImageG2ImageToImage",
+    "_meta": {
+      "title": "RH 全能图片G-2.0-图生图-低价渠道版"
+    }
+  },
+  "64": {
+    "inputs": {
+      "image": "__IMAGE_4__"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "加载图像"
+    }
+  }
+}
